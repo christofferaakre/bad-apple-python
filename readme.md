@@ -12,3 +12,7 @@ Bad apple in the (unix) terminal using Python. Original youtube video:
     * `imagemagick`
     * `ffmpeg`
     * `youtube-dl`
+2. Clone the repository: `git clone https://github.com/christofferaakre/bad-apple-python.git`
+3. `cd bad-apple-python`
+4. Run the setup script: `./setup`
+5. Run the python script: `python3 bad-apple.py`
