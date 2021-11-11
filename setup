@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# download bad apple youtube video
+youtube-dl "https://www.youtube.com/watch?v=FtutLA63Cp8" --output bad-apple.mkv
+# make frame directory if it doesnt already exist
+mkdir -p frames
+# extract frames from video
+ffmpeg -i bad-apple.mkv frames\frame%04d.jpg
+
+# convert all frames to grayscale
+for file in frames/*.png
+do
+    echo "Converting $file to grayscale.."
+    mogrify -colorspace Gray $file
+done
+echo "Done!"
+exit
