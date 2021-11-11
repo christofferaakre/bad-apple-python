@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # download bad apple youtube video
-youtube-dl "https://www.youtube.com/watch?v=FtutLA63Cp8" --output bad-apple.mkv
+youtube-dl "https://www.youtube.com/watch?v=FtutLA63Cp8" --output bad-apple
 # make frame directory if it doesnt already exist
 mkdir -p frames
 # extract frames from video
